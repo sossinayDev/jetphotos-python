@@ -31,12 +31,13 @@ print(get_pictures("https://jetphotos.com/new","random",4))
 
 ## get_picture(url, sort)
 
-Basically get_pictures(url, sort, count=1)[0]
+Basically get_pictures(url, sort, 1)[0]
 
 ### Output:
 String. Full Image URL
 
 ## Download image(url, path)
+Downloads an image from a link and writes it to a file
 
 ### Parameters:
 url: Url of an online image
@@ -47,3 +48,8 @@ Example:
 download_image(get_picture("https://www.jetphotos.com/new","random"), "image.jpg")
 ```
 ![image](https://github.com/sossinayDev/jetphotos-python/assets/125735344/629cda92-bb06-431f-a80e-feda790080af)
+
+## get_full_image(url)
+Gets the image location on cdn.jetphotos.com (Full image, ready to download)
+### Parameters:
+url: Url of the picture page (For example: "https://www.jetphotos.com/photo/11202798")
