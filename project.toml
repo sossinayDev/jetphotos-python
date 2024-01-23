@@ -1,0 +1,14 @@
+[project]
+name = "jetphotos"
+version = "0.0.1"
+authors = [
+  { name="sossinayDev", email="thesossinay.game@gmail.com" },
+]
+description = "To fetch data from jetphotos"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
