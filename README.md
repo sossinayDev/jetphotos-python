@@ -9,7 +9,7 @@ lenlimit: The amount of pictures being loaded before the script stops (If you wa
 ### Output:
 Array containing urls to the picture page (Including author, like, album etc.)
 Example:
-```
+``` Python
 get_picture_links("https://jetphotos.com/new",3)
 >>> ['https://www.jetphotos.com/photo/11202812', 'https://www.jetphotos.com/photo/11202811', 'https://www.jetphotos.com/photo/11202810']
 ```
@@ -21,11 +21,11 @@ url: The url to access. For example: "https://www.jetphotos.com/new"
 sort: Way to sort. Either "newest", "oldest" or "random".
 count: Amount of images. Type: int
 
-### Output
+###  Output
 Array containing urls to the full pictures.
 Example:
-```
-print(get_pictures("https://jetphotos.com/new","random",4))
+``` Python
+get_pictures("https://jetphotos.com/new","random",4)
 >>> ['https://cdn.jetphotos.com/full/6/581667_1704736418.jpg', 'https://cdn.jetphotos.com/full/6/2102927_1704736184.jpg', 'https://cdn.jetphotos.com/full/6/1334877_1704736946.jpg', 'https://cdn.jetphotos.com/full/6/1545021_1704736104.jpg']
 ```
 
@@ -44,7 +44,7 @@ url: Url of an online image
 path: Absolute or relative path to a file (doesn't have to exist)
 
 Example:
-```
+``` Python
 download_image(get_picture("https://www.jetphotos.com/new","random"), "image.jpg")
 ```
 ![image](https://github.com/sossinayDev/jetphotos-python/assets/125735344/629cda92-bb06-431f-a80e-feda790080af)
@@ -53,3 +53,10 @@ download_image(get_picture("https://www.jetphotos.com/new","random"), "image.jpg
 Gets the image location on cdn.jetphotos.com (Full image, ready to download)
 ### Parameters:
 url: Url of the picture page (For example: "https://www.jetphotos.com/photo/11202798")
+### Output
+Url as a string.
+Example:
+``` Python
+get_full_image("https://www.jetphotos.com/photo/11202798")
+>>> https://cdn.jetphotos.com/full/6/1001879_1706005967.jpg
+```
