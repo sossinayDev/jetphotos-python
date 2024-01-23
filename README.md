@@ -4,14 +4,14 @@ Access jetphoto images with python. Made by sossinay
 Used to get the links of the image-pages from an url.
 ### Parameters:
 url: The url to access. For example: "https://www.jetphotos.com/new"
-lenlimit: The amount of full pictures being loaded before the script stops (If you want the 5 newest images, you won't have to
+lenlimit: The amount of pictures being loaded before the script stops (If you want the 5 newest images, you won't have to
 
 ### Output:
-Array containing urls to the full pictures. 
+Array containing urls to the picture page (Including author, like, album etc.)
 Example:
 ```
 get_picture_links("https://jetphotos.com/new",3)
->>> ['https://cdn.jetphotos.com/full/5/1755315_1704727568.jpg', 'https://cdn.jetphotos.com/full/5/808520_1704727553.jpg', 'https://cdn.jetphotos.com/full/6/1436774_1704727507.jpg']
+>>> ['https://www.jetphotos.com/photo/11202812', 'https://www.jetphotos.com/photo/11202811', 'https://www.jetphotos.com/photo/11202810']
 ```
 ## get_pictures(url, sort, count)
 Used to get a certain amount of images, sorted by criteria.
@@ -25,6 +25,25 @@ count: Amount of images. Type: int
 Array containing urls to the full pictures.
 Example:
 ```
-get_pictures("https://www.jetphotos.com/new","random",2)
->>> 
+print(get_pictures("https://jetphotos.com/new","random",4))
+>>> ['https://cdn.jetphotos.com/full/6/581667_1704736418.jpg', 'https://cdn.jetphotos.com/full/6/2102927_1704736184.jpg', 'https://cdn.jetphotos.com/full/6/1334877_1704736946.jpg', 'https://cdn.jetphotos.com/full/6/1545021_1704736104.jpg']
 ```
+
+## get_picture(url, sort)
+
+Basically get_pictures(url, sort, count=1)[0]
+
+### Output:
+String. Full Image URL
+
+## Download image(url, path)
+
+### Parameters:
+url: Url of an online image
+path: Absolute or relative path to a file (doesn't have to exist)
+
+Example:
+```
+download_image(get_picture("https://www.jetphotos.com/new","random"), "image.jpg")
+```
+![image](https://github.com/sossinayDev/jetphotos-python/assets/125735344/629cda92-bb06-431f-a80e-feda790080af)
