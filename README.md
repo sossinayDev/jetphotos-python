@@ -58,5 +58,5 @@ Url as a string.
 Example:
 ``` Python
 get_full_image("https://www.jetphotos.com/photo/11202798")
->>> https://cdn.jetphotos.com/full/6/1001879_1706005967.jpg
+#>>> https://cdn.jetphotos.com/full/6/1001879_1706005967.jpg
 ```
