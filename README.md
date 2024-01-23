@@ -22,3 +22,9 @@ sort: Way to sort. Either "newest", "oldest" or "random".
 count: Amount of images. Type: int
 
 ### Output
+Array containing urls to the full pictures.
+Example:
+```
+get_pictures("https://www.jetphotos.com/new","random",2)
+>>> 
+```
