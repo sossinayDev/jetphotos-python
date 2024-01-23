@@ -3,7 +3,7 @@ Access jetphoto images with python. Made by sossinay
 ## get_picture_links(url, lenlimit)
 Used to get the links of the image-pages from an url.
 ### Parameters:
-url: The url to access. For example: "https://www.jetphotos.com/new"
+url: The url to access. For example: "https://www.jetphotos.com/new"<br />
 lenlimit: The amount of pictures being loaded before the script stops (If you want the 5 newest images, you won't have to
 
 ### Output:
@@ -17,8 +17,8 @@ get_picture_links("https://jetphotos.com/new",3)
 Used to get a certain amount of images, sorted by criteria.
 
 ### Parameters:
-url: The url to access. For example: "https://www.jetphotos.com/new"
-sort: Way to sort. Either "newest", "oldest" or "random".
+url: The url to access. For example: "https://www.jetphotos.com/new"<br />
+sort: Way to sort. Either "newest", "oldest" or "random".<br />
 count: Amount of images. Type: int
 
 ###  Output
@@ -40,8 +40,10 @@ String. Full Image URL
 Downloads an image from a link and writes it to a file
 
 ### Parameters:
-url: Url of an online image
+url: Url of an online image<br />
 path: Absolute or relative path to a file (doesn't have to exist)
+
+### Output:
 
 Example:
 ``` Python
@@ -54,8 +56,8 @@ Gets the image location on cdn.jetphotos.com (Full image, ready to download)
 ### Parameters:
 url: Url of the picture page (For example: "https://www.jetphotos.com/photo/11202798")
 ### Output
-Url as a string.
-Example:
+Url as a string.<br />
+Example:<br />
 ``` Python
 get_full_image("https://www.jetphotos.com/photo/11202798")
 #>>> https://cdn.jetphotos.com/full/6/1001879_1706005967.jpg
