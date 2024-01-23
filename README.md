@@ -11,7 +11,7 @@ Array containing urls to the picture page (Including author, like, album etc.)
 Example:
 ``` Python
 get_picture_links("https://jetphotos.com/new",3)
->>> ['https://www.jetphotos.com/photo/11202812', 'https://www.jetphotos.com/photo/11202811', 'https://www.jetphotos.com/photo/11202810']
+#>>> ['https://www.jetphotos.com/photo/11202812', 'https://www.jetphotos.com/photo/11202811', 'https://www.jetphotos.com/photo/11202810']
 ```
 ## get_pictures(url, sort, count)
 Used to get a certain amount of images, sorted by criteria.
@@ -26,7 +26,7 @@ Array containing urls to the full pictures.
 Example:
 ``` Python
 get_pictures("https://jetphotos.com/new","random",4)
->>> ['https://cdn.jetphotos.com/full/6/581667_1704736418.jpg', 'https://cdn.jetphotos.com/full/6/2102927_1704736184.jpg', 'https://cdn.jetphotos.com/full/6/1334877_1704736946.jpg', 'https://cdn.jetphotos.com/full/6/1545021_1704736104.jpg']
+#>>> ['https://cdn.jetphotos.com/full/6/581667_1704736418.jpg', 'https://cdn.jetphotos.com/full/6/2102927_1704736184.jpg', 'https://cdn.jetphotos.com/full/6/1334877_1704736946.jpg', 'https://cdn.jetphotos.com/full/6/1545021_1704736104.jpg']
 ```
 
 ## get_picture(url, sort)
