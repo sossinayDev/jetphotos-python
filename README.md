@@ -1,5 +1,6 @@
 # jetphotos
 Access jetphoto images with python. Made by sossinay
+# THIS LIBRARY DOESN'T WORK ANYMORE BECAUSE OF ANTI-BOT UPDATES ON JETPHOTOS
 ## get_picture_links(url, lenlimit)
 Used to get the links of the image-pages from an url.
 ### Parameters:
